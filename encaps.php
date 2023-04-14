@@ -1,6 +1,6 @@
 <?php
 
-class Fruit{
+class Animal{
 
     private $name;
     private $color;
@@ -26,9 +26,9 @@ class Fruit{
     }
 }
 
-$apple = new Fruit();
-$apple->set_name("Apel");
-$apple->set_color("Merah");
+$apple = new Animal();
+$apple->set_name("Cat");
+$apple->set_color("Brown");
 
 echo $apple->get_name();
 echo $apple->get_color();

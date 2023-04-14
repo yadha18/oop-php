@@ -1,6 +1,6 @@
 <?php
 
-class Fruit{
+class Buah{
 
     public $name;
     public $color;
@@ -10,7 +10,7 @@ class Fruit{
     }
 }
 
-$apple = new Fruit();
+$apple = new Buah();
 $apple->name = "Apel";
 $apple->color = "Merah";
 
