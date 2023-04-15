@@ -16,10 +16,21 @@ class Fruit{
     }
 }
 
+class CetakInfoBuah{
+    public function cetak(Fruit $fruit) {
+        $str = "Nama: {$fruit->name} | Warna: {$fruit->color}, Harga: {$fruit->price}";
+        return $str;
+    }
+}
+
 $fruit1 = new Fruit("Apel", "Merah", 5000);
 $fruit2 = new Fruit("Jeruk", "Orange", 3500);
 
 echo $fruit1->introduce();
-echo "<br>";
+echo "\n";
 echo $fruit2->introduce();
+echo "\n";
+
+$infoBuah1 = new CetakInfoBuah();
+echo $infoBuah1->cetak($fruit1);
 ?>
